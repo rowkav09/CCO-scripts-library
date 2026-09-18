@@ -126,7 +126,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: update generated files"
+            git commit -m "chore: update generated files" -m "Co-authored-by: rowkav0809 <rowkav0808@highgateschool.org.uk>"
             git pull --rebase -X ours origin ${{ github.ref_name }}
             git push origin HEAD:${{ github.ref_name }}
             echo "Repository files committed and pushed"

@@ -42,7 +42,7 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to author folders"
           else
-            git commit -m "chore: sync author folders"
+            git commit -m "chore: sync author folders" -m "Co-authored-by: rowkav0809 <rowkav0808@highgateschool.org.uk>"
             git push origin HEAD:${{ github.ref_name }}
             echo "Author folders updated"
           fi
