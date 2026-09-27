@@ -9,5 +9,8 @@
   },
   "author": "rowka",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "ghost-deps": "^0.1.6"
+  }
 }
